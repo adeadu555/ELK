@@ -538,7 +538,17 @@ Filebeat Installation
 
 ELK Server homepage
 
-Image: ELK-Server-Homepage
+Image: Kibana-Homepage
+
+Open your ELK server homepage.
+    - Click on **Add Log Data**.
+    - Choose **System Logs**.
+    - Click on the **DEB** tab under **Getting Started** to view the correct Linux Filebeat installation instructions
+
+
+Create Filebeat Configuration file
+
+
 
   
   
