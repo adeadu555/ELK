@@ -5,7 +5,7 @@ The files in this repository were used to configure the network depicted below.
 **Note**: The following image link needs to be updated. Replace `Cloud-Security-Diagram(1).pdf` with the name of your diagram image file.  
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the install-elk.yml file may be used to install only certain pieces of it, such as Filebeat.
 
   ---
 - name: Config elk server with docker
@@ -44,7 +44,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
    - name: enable docker service
      systemd:
        name: docker
-​
+
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
@@ -52,8 +52,8 @@ This document contains the following details:
   - Beats in Use
   - Machines Being Monitored
 - How to Use the Ansible Build
-​
-​
+
+
 ### Description of the Topology
 ​
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
@@ -67,56 +67,62 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 ​
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
-​
+
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
 | TODO     |  Web-1   | 10.1.0.7   | Linux            |
 | TODO     |   Web-2  | 10.1.0.8   | Linux            |
 | TODO     |          |            |                  |
-​
+
 ### Access Policies
-​
+
 The machines on the internal network are not exposed to the public Internet. 
-​
+
 Only the __Jumpbox___ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
-​
+
 Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- _TODO: Which machine did you allow to access your ELK VM? - The jump-box-provisioner What was its IP address?- 40.112.209.243
 ​
 A summary of the access policies in place can be found in the table below.
 ​
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-| Web-1    |                     |                      |
-| Web-2    |                     |                      |
+| Jump Box |  No                 | 10.1.0.4             |
+| Web-1    |  No                 | 10.1.0.7             |
+| Web-2    |  No                 | 10.1.0.8             |
 ​
 ### Elk Configuration
 ​
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- _TODO: What is the main advantage of automating configuration with Ansible?_Flexible: You can orchestrate the entire application environment no matter where it's deployed
 ​
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
+- - From your Ansible container, add the new VM to Ansible's hosts file.
+	- Create a playbook that installs Docker and configures the container.
+	- Run the playbook to launch the container.
 - ...
 ​
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 ​
-**Note**: The following image link needs to be updated. Replace `docker_ps_output.png` with the name of your screenshot image file.  
-​
-​
+ONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                                                              NAMES
+ee64297b15c8   sebp/elk:761   "/usr/local/bin/star…"   20 minutes ago   Up 19 minutes   0.0.0.0:5044->5044/tcp, 0.0.0.0:5601->5601/tcp, 0.0.0.0:9200->9200/tcp, 9300/tcp   elk
+
+
+
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 ​
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
+- Web-1: 10.1.0.7
+- Web-2: 10.1.0.8
 ​
 We have installed the following Beats on these machines:
 - _TODO: Specify which Beats you successfully installed_
-​
+​ 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 ​
