@@ -1,29 +1,45 @@
 # ELK
 ELK-Project
 
-1.Activities for ELK Server configuration
+1.Activities for Azure setup and ELK Server configuration
 
-Create a Resource Group
-Create a new Virtual Network
-Create peer connection between your virtual Networks
-Create New Virtual Machine
-Configure new Virtual Machine using Ansible
-Add ELK to Ansible's hosts file
-Create playbook to configure ELK server
-SSH into ELK server
-Restrict access to ELK virtual Machine using Azure's Network Security Group (NSG)
+A. Create a Resource Group on Azure
+B. Create a new Virtual Network
+C. Create peer connection between your virtual Networks
+D. Create New Virtual Machine
+E. Configure new Virtual Machine using Ansible
+F. Add ELK to Ansible's hosts file
+G. Create playbook to configure ELK server
+H. SSH into ELK server
+I. Restrict access to ELK virtual Machine using Azure's Network Security Group (NSG)
 
 2.Activities for Filebeat configuration
 
-Install filebeat on the DWVA Container
-Create Filebeat configuration file
-Create Filebeat Installation play
-Verify installation and playbook
+A. Install filebeat on the DWVA Container
+B. Create Filebeat configuration file
+C. Create Filebeat Installation play
+D. Verify installation and playbook
 
 
 
 
-Description of Deployment
+2. Description of Deployment
+
+Creation of Resource Group on Azure
+    Instructions to follow - Creating a resource Group
+    Go to the top bar ---> [Type] Resource Group 
+    [Click] + create
+    Go To Basics Tab
+    Enter "US West US" under Reqion
+    Enter Resource Group Name: Red-Team
+    [Click Review & Create]
+    [Create]
+    
+
+
+
+
+
 
 
 
