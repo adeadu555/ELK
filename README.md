@@ -62,7 +62,7 @@ Next step is to add Virtual Network (a collection of virtual machines that can c
 
     Running final validation ..... Validation passed
 
-    Then click on Create
+    Then click on Create [Create]
 
     ....Initializing Deployment to 
     ....Your deployment is complete
