@@ -25,7 +25,7 @@ D. Verify installation and playbook
 
 2. Description of Deployment
 
-Creation of Resource Group on Azure
+Creation of Red-Team Resource Group on Azure
     Instructions to follow - Creating a resource Group
     Go to the top bar ---> [Type] Resource Group 
     [Click] + create
@@ -34,7 +34,36 @@ Creation of Resource Group on Azure
     Enter Resource Group Name: Red-Team
     [Click Review & Create]
     [Create]
+
+Add a Virtual Network ELK-NET in a new Region from the Red-Team Resource group
+Next step is to add Virtual Network (a collection of virtual machines that can communicate with one another)
+
+    Type -- Virtual network on Top bar
+
+    Select your resource Group
+    Enter your virtual network - ELK-NET
+    Click Next: IP addresses
+    Default: 10.1.0.0/16
+
+    Go to Security Tab Next: leave the defaults as well
+
+    Go to Tag Tab: Leave as it is
+
+    Go to Review & Create 
+
+    Running final validation ..... Validation passed
+
+    Then click on Create
+
+    ....Initializing Deployment to 
+    ....Your deployment is complete
     
+    
+    Image: Image1-VirtualNetwork-ELK-NET
+    
+    
+  
+  
 
 
 
