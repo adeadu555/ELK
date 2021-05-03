@@ -84,9 +84,9 @@ C.  Create peer connection to allow traffic pass between virtual networks and re
  
  Image: Image3 - ELK-Server
  
- E. 
+ E. From Ansible container, configure the newly created virtual machine
  
- F.
+ F. Add ELK to Ansible's hosts file
  
  
  G. Playbook that installs Docker
