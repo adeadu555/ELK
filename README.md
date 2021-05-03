@@ -589,13 +589,9 @@ Filebeat playbook
 
 
 
-
-
-
-
-
-
 Table specifying access policies and network addresses
+
+
 
 
 
