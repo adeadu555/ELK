@@ -25,7 +25,7 @@ D. Verify installation and playbook
 
 2. Description of Deployment
 
-Creation of Red-Team Resource Group on Azure
+A. Creation of Red-Team Resource Group on Azure
     Instructions to follow - Creating a resource Group
     Go to the top bar ---> [Type] Resource Group 
     [Click] + create
@@ -35,7 +35,7 @@ Creation of Red-Team Resource Group on Azure
     [Click Review & Create]
     [Create]
 
-Add a Virtual Network ELK-NET in a new Region from the Red-Team Resource group
+B. Add a Virtual Network ELK-NET in a new Region from the Red-Team Resource group
 Next step is to add Virtual Network (a collection of virtual machines that can communicate with one another)
 
     Type -- Virtual network on Top bar
@@ -61,7 +61,19 @@ Next step is to add Virtual Network (a collection of virtual machines that can c
     
     Image: Image1-VirtualNetwork-ELK-NET
     
+C.  Create peer connection to allow traffic pass between virtual networks and regions
+
+	Navigate to 'Virtual Network' in the Azure Portal.
+	Select your new vNet to view it's details.
+	Under 'Settings' on the left side, select 'Peerings'.
+	Click the + Add button to create a new Peering.
     
+    Image: Image2-Elk-Peering
+    
+    
+ D. 
+
+
   
   
 
