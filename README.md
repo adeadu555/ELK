@@ -1,19 +1,19 @@
 # ELK
 ELK-Project
 
-Prerequisites 
+Prerequisites for the ELK project:
 
 
 User must have installed and configured:
 A Resource Group: Red-Team
 A network Security Group - RedTeam-Firewall
 Virtual Machine - Jump-Box-Provisioner
-virtual machine - Web-1 and Web-2.
+virtual machines - Web-1 and Web-2.
 
 1.Activities for Azure setup and ELK Server configuration
 
 A. Create a Resource Group on Azure
-B. Create a new Virtual Network
+B. Create a new Virtual Network - ELK-NET
 C. Create peer connection between your virtual Networks
 D. Create New Virtual Machine
 E. Configure new Virtual Machine using Ansible
