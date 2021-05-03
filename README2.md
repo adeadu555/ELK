@@ -1,12 +1,12 @@
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
-​
+
 **Note**: The following image link needs to be updated. Replace `Cloud-Security-Diagram(1).pdf` with the name of your diagram image file.  
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
-​
+
   ---
 - name: Config elk server with docker
   hosts: elk
@@ -71,8 +71,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |  Web-1   | 10.1.0.7   |  Linux           |
-| TODO     |   Web-2  | 10.1.0.8   |   Linux          |
+| TODO     |  Web-1   | 10.1.0.7   | Linux            |
+| TODO     |   Web-2  | 10.1.0.8   | Linux            |
 | TODO     |          |            |                  |
 ​
 ### Access Policies
