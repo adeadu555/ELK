@@ -591,7 +591,12 @@ Filebeat playbook
 
 Table specifying access policies and network addresses
 
-
+| Name     | Function | IP Address | Operating System |
+|----------|----------|------------|------------------|
+| Jump Box | Gateway  | 10.1.0.4   | Linux            |
+| Web-1    |          | 10.1.0.7   | Linux            |
+| Web-2    |          | 10.1.0.8   | Linux            |
+|          |          |            |                  |
 
 
 
