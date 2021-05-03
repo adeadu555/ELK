@@ -534,6 +534,11 @@ azadmin@ELK-SERVER:~$ curl localhost:5601/app/kibana
           </script><script src="/bundles/app/kibana/bootstrap.js"></script></body></html>azadmin@ELK-SERVER:~$ 
  
 
+Filebeat Installation
+
+ELK Server homepage
+
+Image: ELK-Server-Homepage
 
   
   
