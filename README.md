@@ -2,7 +2,13 @@
 ELK-Project
 
 Prerequisites 
-User must have installed and configured virtual machines - Jumpbox, Web-1 and Web-2.
+
+
+User must have installed and configured:
+A Resource Group: Red-Team
+A network Security Group - RedTeam-Firewall
+Virtual Machine - Jump-Box-Provisioner
+virtual machine - Web-1 and Web-2.
 
 1.Activities for Azure setup and ELK Server configuration
 
