@@ -577,7 +577,10 @@ Filebeat playbook
       name: filebeat
       enabled: yes
   
+ Command:
   
+ root@7a83e6be604d:/etc/ansible# ansible-playbook filebeat-playbook.yml
+
 
 
 
