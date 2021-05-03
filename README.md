@@ -71,7 +71,11 @@ C.  Create peer connection to allow traffic pass between virtual networks and re
     Image: Image2-Elk-Peering
     
     
- D. Create new Virtual Machines - Web-1 and Web-2
+ D. Create new Virtual Machine - ELK Server
+ 
+ Image: Image3 - ELK-Server
+ 
+ 
  
  
 
