@@ -1,6 +1,9 @@
 # ELK
 ELK-Project
 
+Prerequisites 
+User must have installed and configured virtual machines - Jumpbox, Web-1 and Web-2.
+
 1.Activities for Azure setup and ELK Server configuration
 
 A. Create a Resource Group on Azure
