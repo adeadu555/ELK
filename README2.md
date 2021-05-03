@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 ​
-**Note**: The following image link needs to be updated. Replace `Cloud-Security-Diagram` with the name of your diagram image file.  
+**Note**: The following image link needs to be updated. Replace `Cloud-Security-Diagram(1).pdf` with the name of your diagram image file.  
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
@@ -58,12 +58,12 @@ This document contains the following details:
 ​
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 ​
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly protected from DDOS, in addition to restricting overload to the network.
+Load balancing protects against Distributed Denial of Service. Jump box is used to manage devices in different security zones.
 ​
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- _TODO: What does Filebeat watch for?_     Log files
+- _TODO: What does Metricbeat record?_      metrics from operating systems
 ​
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -71,15 +71,15 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| TODO     |  Web-1   | 10.1.0.7   |  Linux           |
+| TODO     |   Web-2  | 10.1.0.8   |   Linux          |
 | TODO     |          |            |                  |
 ​
 ### Access Policies
 ​
 The machines on the internal network are not exposed to the public Internet. 
 ​
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the __Jumpbox___ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
 ​
 Machines within the network can only be accessed by _____.
@@ -90,8 +90,8 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Web-1    |                     |                      |
+| Web-2    |                     |                      |
 ​
 ### Elk Configuration
 ​
